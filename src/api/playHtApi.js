@@ -3,7 +3,7 @@ const router = express.Router();
 const config = require('../config.js');
 const axios = require('axios');
 
-router.post('/generateTTS', async (req, res) => {
+router.post('/generateWebSocket', async (req, res) => {
   try {
     const response = await axios.post(
       'https://api.play.ht/api/v4/websocket-auth',
